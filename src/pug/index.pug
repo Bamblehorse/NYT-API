@@ -1,0 +1,49 @@
+doctype html
+html(lang="en" ng-app="NYT-API")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= "NYT API"
+    script(src="https://use.fontawesome.com/fd06acc1a7.js")
+    link(href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Poppins" rel="stylesheet")
+    link(rel="stylesheet" href="css/style.css")
+    script(src="js/angular.min.js")
+    script(src="js/app.js")
+
+  body(ng-controller="MainCtrl")
+    section(class="mask" ng-show="settingsOpen")
+        h1 Settings
+        div Hide topics by default
+            button(class="checkbox" ng-click="toggle('hideTopics')")
+                i(class="fa fa-square-o fa-2x" ng-hide="hideTopics")
+                i(class="fa fa-check-square-o fa-2x" ng-show="hideTopics")
+        div Hide articles without images
+            button(class="checkbox" ng-click="toggle('onlyImages')")
+                i(class="fa fa-square-o fa-2x" ng-hide="onlyImages")
+                i(class="fa fa-check-square-o fa-2x" ng-show="onlyImages")
+        i(class="fa fa-times fa-2x" ng-click="toggle('settingsOpen')")
+
+    header
+        h1 New York Times API feed
+        h3 Built with AngularJS
+        button(ng-click="toggle('settingsOpen')")  - Settings -
+        form(class="search" ng-submit="search()")
+            label Search:
+            input(ng-model="query" class="input")
+            button(class="fa fa-search submit" ng-click="search()")
+    section(ng-repeat="articleSet in articles")
+        article(ng-repeat="article in articleSet" ng-hide="hideArticle(article)")
+            h2 {{article.headline.main}}
+            h3 {{article.headline.kicker}}
+            h4 {{article.byline.original}}
+            h5
+                span(ng-show="article.word_count")  {{article.word_count}} words
+                span  - {{article.type_of_material}}
+                span  -
+                    time {{article.pub_date | date}}
+            img(src="http://www.nytimes.com/{{article.multimedia[1].url}}")
+            p {{article.lead_paragraph}}
+            a(href="{{article.web_url}}")
+                button - Read More -
+
+    h6 Time to load: {{meta[0].time}}ms, Hits: {{meta[0].hits}}
