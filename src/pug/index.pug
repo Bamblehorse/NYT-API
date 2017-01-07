@@ -41,7 +41,7 @@ html(lang="en" ng-app="NYT-API")
                 span  - {{article.type_of_material}}
                 span  -
                     time {{article.pub_date | date}}
-            img(src="http://www.nytimes.com/{{article.multimedia[1].url}}")
+            img(src="https://www.nytimes.com/{{article.multimedia[1].url}}")
             p {{article.lead_paragraph}}
             a(href="{{article.web_url}}")
                 button - Read More -
