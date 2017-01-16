@@ -1,8 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "NYT",
   "version": "1.0.0",
-  "description": "Simple Gulp Workflow",
-  "main": "index.html",
+  "description": "Loads articles from the NYT api",
+  "main": "dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
