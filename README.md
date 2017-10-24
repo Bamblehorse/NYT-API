@@ -1,5 +1,5 @@
 # NYT API
-
+ 
 AngularJS app which loads nytimes articles from the [NYT API](http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json) via http requests and displays them as a collection. Articles are loaded in groups of 10 and stored in a list. Built with [Pug](https://pugjs.org/api/getting-started.html), [Sass](http://sass-lang.com/) and [Gulp](http://gulpjs.com/).
 
 
