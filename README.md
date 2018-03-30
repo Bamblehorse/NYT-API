@@ -1,7 +1,10 @@
-# NYT API
+# :newspaper: NYT API :newspaper:
+
+LT;DR :newspaper_roll:  :zap:[Check it out on GitHub pages](https://jonathandwood.github.io/NYT-API/dist/) :zap:  :newspaper_roll:
 
 AngularJS app which loads nytimes articles from the [NYT API](http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json) via http requests and displays them as a collection. Articles are loaded in groups of 10 and stored in a list. Built with [Pug](https://pugjs.org/api/getting-started.html), [Sass](http://sass-lang.com/) and [Gulp](http://gulpjs.com/).
 
+![image](https://user-images.githubusercontent.com/20028526/38145155-eb621fbe-3415-11e8-8938-550a2d7dc875.png)
 
 ## Getting Started
 Below you will find instructions for setting the project up on your computer.
