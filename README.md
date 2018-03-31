@@ -1,6 +1,6 @@
 # :newspaper: NYT API :newspaper:
 
-LT;DR :newspaper_roll:  :zap:[Check it out on GitHub pages](https://jonathandwood.github.io/NYT-API/dist/) :zap:  :newspaper_roll:
+LT;DR :newspaper_roll:  :zap:[Check it out on GitHub pages](https://bamblehorse.github.io/NYT-API/dist/) :zap:  :newspaper_roll:
 
 AngularJS app which loads nytimes articles from the [NYT API](http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json) via http requests and displays them as a collection. Articles are loaded in groups of 10 and stored in a list. Built with [Pug](https://pugjs.org/api/getting-started.html), [Sass](http://sass-lang.com/) and [Gulp](http://gulpjs.com/).
 
@@ -19,7 +19,7 @@ Navigate to a folder on your machine where you are happy to place the project fo
 
 Open up your command-line interface and type:
 ```
-git clone https://github.com/JonathanDWood/NYT-API
+git clone https://github.com/Bamblehorse/NYT-API
 ```
 Now change directories into the project directory:
 ```
@@ -41,7 +41,7 @@ If the project hasn't automatically opened in your browser, [click here.](http:/
 * [Npm/Node.js](https://nodejs.org/en/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) - As above
 
 ## Author
-* **Jonathan Wood** - [Github](https://github.com/JonathanDWood/)
+* **Jonathan Wood** - [Github](https://github.com/Bamblehorse/)
 
 ## License
 See the [license](LICENSE) file for details
